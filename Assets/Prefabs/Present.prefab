@@ -214,6 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2b230ad5f12b1468e527e529fdb5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PresentCollectedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _value: 1
+  _colors: []
   _bounceForce: 5
 --- !u!114 &5144222605262666938
 MonoBehaviour:
@@ -231,3 +236,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 0fdabc067f6e3814683fd961e3b760a5, type: 2}
   - {fileID: 2100000, guid: 7bc216617b268b4458ce4abb293f4224, type: 2}
   - {fileID: 2100000, guid: 0e33a5aed38c3284880fca1b67bb71ed, type: 2}
+  _coloredMaterialName: colored

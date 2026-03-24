@@ -37,10 +37,11 @@ public static class ColorMaterialUtils
         if (material == null) return ColorId.Unknown;
 
         string name = material.name.ToLower();
+        // «colored» содержит подстроку «red» — проверять раньше, иначе шапка colored считается красной.
+        if (name.Contains("colored")) return ColorId.Colored;
         if (name.Contains("red")) return ColorId.Red;
         if (name.Contains("green")) return ColorId.Green;
         if (name.Contains("blue")) return ColorId.Blue;
-        if (name.Contains("colored")) return ColorId.Colored;
         return ColorId.Unknown;
     }
 

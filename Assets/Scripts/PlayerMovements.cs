@@ -1,39 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
     [Header("Spawn Settings")]
-    [SerializeField] private GameObject _snowmanPrefab;
     [SerializeField] private GameObject _prizePrefab;
     [SerializeField] private Material[] _prizeColors;
     [SerializeField] private int _prizeCount = 6;
     [SerializeField] private float _spawnRange = 9f;
 
-    private GameObject _spawnedSnowman;
-
     private void Awake()
     {
-        SpawnSnowman();
         SpawnPrizes();
-    }
-
-    private void SpawnSnowman()
-    {
-        if (_snowmanPrefab == null)
-        {
-            Debug.LogError("[GameBoard] Префаб снеговика не назначен!");
-            return;
-        }
-
-        _spawnedSnowman = Instantiate(_snowmanPrefab);
-        _spawnedSnowman.transform.position = new Vector3(0, 0, 0);
-
-        if (_spawnedSnowman.GetComponent<SnowmanController>() == null)
-            _spawnedSnowman.AddComponent<SnowmanController>();
-
-        Debug.Log($"[GameBoard] Снеговик спавнен на позиции {_spawnedSnowman.transform.position}");
     }
 
     private void SpawnPrizes()

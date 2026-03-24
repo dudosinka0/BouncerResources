@@ -1,8 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PrizeController : MonoBehaviour
 {
+    [Header("Counter Settings")]
+    public UnityEvent<float> PresentCollectedEvent;
+
+    [SerializeField] private float _value;
+
     [Header("Color Settings")]
     [SerializeField] private Material[] _colors; // Цвета лент
 
@@ -120,6 +126,12 @@ public class PrizeController : MonoBehaviour
         {
             _isProcessingHit = true;
             Debug.Log($"✅ Цвета совпали! Шапка: {hatColorId}, Подарок: {prizeColorId}. Уничтожаем.");
+
+            CounterManager counter = snowman.GetComponent<CounterManager>();
+            if (counter != null)
+                counter.AddScore(1f);
+
+            PresentCollectedEvent.Invoke(1f);
             StartCoroutine(DestroyAnimation());
         }
         else

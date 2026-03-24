@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1400517109560288083}
   - component: {fileID: 2722699997484436666}
   - component: {fileID: 4003874062456408862}
+  - component: {fileID: 4238892172082948150}
   m_Layer: 0
   m_Name: Snowman
   m_TagString: Player
@@ -132,5 +133,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _bounceForce: 5
   _bounceDuration: 0.3
+  _boundarySize: 9
+--- !u!114 &4238892172082948150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8888005179860387221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23b1b7f5fa20c34fb298f8886e72013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IncreaseScoreEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -345,9 +345,11 @@
 "Assets/Scripts/CandyController.cs"
 "Assets/Scripts/CandySpawner.cs"
 "Assets/Scripts/ColorMaterialUtils.cs"
+"Assets/Scripts/CounterManager.cs"
 "Assets/Scripts/PlayerMovements.cs"
 "Assets/Scripts/PrizeColor.cs"
 "Assets/Scripts/PrizeController.cs"
+"Assets/Scripts/ScoreView.cs"
 "Assets/Scripts/SnowmanController.cs"
 -langversion:9.0
 
