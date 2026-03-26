@@ -150,7 +150,7 @@ MonoBehaviour:
   IncreaseScoreEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6709122670054445392, guid: 7b100496130a3994a8dae924aa7dcde9, type: 3}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -162,3 +162,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _red: 0
+  _green: 0
+  _blue: 0
+  _colored: 0
+  _total: 0

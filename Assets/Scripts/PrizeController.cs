@@ -129,7 +129,9 @@ public class PrizeController : MonoBehaviour
 
             CounterManager counter = snowman.GetComponent<CounterManager>();
             if (counter != null)
-                counter.AddScore(1f);
+            {
+                counter.AddScore(prizeColorId, 1);
+            }
 
             PresentCollectedEvent.Invoke(1f);
             StartCoroutine(DestroyAnimation());

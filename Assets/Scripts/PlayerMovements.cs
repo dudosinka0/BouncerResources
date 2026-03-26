@@ -7,6 +7,7 @@ public class PlayerMovements : MonoBehaviour
     [SerializeField] private Material[] _prizeColors;
     [SerializeField] private int _prizeCount = 6;
     [SerializeField] private float _spawnRange = 9f;
+    public int PrizeCount => _prizeCount;
 
     private void Awake()
     {

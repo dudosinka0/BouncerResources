@@ -53,6 +53,7 @@
     <UnityVersion>2022.1.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CounterManager.cs" />
     <Compile Include="Assets\Scripts\CandyController.cs" />
     <Compile Include="Assets\Scripts\PrizeColor.cs" />
     <Compile Include="Assets\Scripts\PlayerMovements.cs" />
@@ -60,8 +61,8 @@
     <Compile Include="Assets\Scripts\CandySpawner.cs" />
     <Compile Include="Assets\Scripts\PrizeController.cs" />
     <Compile Include="Assets\Scripts\ColorMaterialUtils.cs" />
-    <Compile Include="Assets\Scripts\CounterManager.cs" />
     <Compile Include="Assets\Scripts\ScoreView.cs" />
+    <Compile Include="Assets\Scripts\WinView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
